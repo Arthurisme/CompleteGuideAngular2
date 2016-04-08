@@ -1,6 +1,4 @@
-System.register(['angular2/core', "./puzzle/puzzle.component"], function(exports_1, context_1) {
-    "use strict";
-    var __moduleName = context_1 && context_1.id;
+System.register(['angular2/core', "./puzzle/puzzle.component"], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -33,10 +31,9 @@ System.register(['angular2/core', "./puzzle/puzzle.component"], function(exports
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
                 return AppComponent;
-            }());
+            })();
             exports_1("AppComponent", AppComponent);
         }
     }
 });
-
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFnQkE7Z0JBQUE7Z0JBRUEsQ0FBQztnQkFmRDtvQkFBQyxnQkFBUyxDQUFDO3dCQUNQLFFBQVEsRUFBRSxRQUFRO3dCQUNsQixRQUFRLEVBQUUsdURBSVQ7d0JBQ0QsVUFBVSxFQUFFLENBQUMsa0NBQWUsQ0FBQztxQkFDaEMsQ0FBQzs7Z0NBQUE7Z0JBT0YsbUJBQUM7WUFBRCxDQUZBLEFBRUMsSUFBQTtZQUZELHVDQUVDLENBQUEiLCJmaWxlIjoiYXBwLmNvbXBvbmVudC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7Q29tcG9uZW50fSBmcm9tICdhbmd1bGFyMi9jb3JlJztcbmltcG9ydCB7UHV6emxlQ29tcG9uZW50fSBmcm9tIFwiLi9wdXp6bGUvcHV6emxlLmNvbXBvbmVudFwiO1xuXG5AQ29tcG9uZW50KHtcbiAgICBzZWxlY3RvcjogJ215LWFwcCcsXG4gICAgdGVtcGxhdGU6IGBcblxuICAgICAgICA8bXktcHV6emxlPkxvYWRpbmcuLi48L215LXB1enpsZT5cblxuICAgIGAsXG4gICAgZGlyZWN0aXZlczogW1B1enpsZUNvbXBvbmVudF1cbn0pXG5cblxuXG5cbmV4cG9ydCBjbGFzcyBBcHBDb21wb25lbnQge1xuXG59XG4iXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0=
+//# sourceMappingURL=app.component.js.map
