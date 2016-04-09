@@ -10,21 +10,38 @@ import {Component} from 'angular2/core';
        {{"Please!"}}
         {{name}}
 
-        <input type="text" [value]="name" [ngClass]=" {red: true}">
+        <br> Event binding <br>
+        <input type="text" [value]="name" [ngClass]=" {red: true}" (keyup)="onKeyup(inputElement.value)" #inputElement>
+        <p>{{value}}</p>
+        <br>
+             <br> sample binding <br>
+        <input type="text"   #inputElementS>
+        <p>(inputElementS.value)</p>
+                <br>
+
+        Two way binding
+        <br>
+                <input type="text"  [(ngModel)]="name">
+        <p>Your name: {{name}}</p>
+
+
 
     `,
 
 })
 
 
-
-
 export class AppComponent {
 
-    name = "Bush"
+    name = "Bush";
+    value = "";
 
-    testFunc(){
-        return '23';
+    testFunc() {
+        return "1 === 1 ";
+    }
+
+    onKeyup(value:string) {
+        this.value += value + '|';
     }
 
 }

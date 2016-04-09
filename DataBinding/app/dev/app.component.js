@@ -19,14 +19,18 @@ System.register(['angular2/core'], function(exports_1) {
             AppComponent = (function () {
                 function AppComponent() {
                     this.name = "Bush";
+                    this.value = "";
                 }
                 AppComponent.prototype.testFunc = function () {
-                    return '23';
+                    return "1 === 1 ";
+                };
+                AppComponent.prototype.onKeyup = function (value) {
+                    this.value += value + '|';
                 };
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n\n       hello!\n          {{testFunc()}}\n       {{\"Please!\"}}\n        {{name}}\n\n        <input type=\"text\" [value]=\"name\" [ngClass]=\" {red: true}\">\n\n    ",
+                        template: "\n\n       hello!\n          {{testFunc()}}\n       {{\"Please!\"}}\n        {{name}}\n\n        <br> Event binding <br>\n        <input type=\"text\" [value]=\"name\" [ngClass]=\" {red: true}\" (keyup)=\"onKeyup(inputElement.value)\" #inputElement>\n        <p>{{value}}</p>\n        <br>\n             <br> sample binding <br>\n        <input type=\"text\"   #inputElementS>\n        <p>(inputElementS.value)</p>\n                <br>\n\n        Two way binding\n        <br>\n                <input type=\"text\"  [(ngModel)]=\"name\">\n        <p>Your name: {{name}}</p>\n\n\n\n    ",
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
