@@ -1,4 +1,4 @@
-System.register(['angular2/core', "./property-binding.component"], function(exports_1) {
+System.register(['angular2/core'], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,26 +8,29 @@ System.register(['angular2/core', "./property-binding.component"], function(expo
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, property_binding_component_1;
+    var core_1;
     var AppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (property_binding_component_1_1) {
-                property_binding_component_1 = property_binding_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
-                    this.name = "";
+                    this.name = "Bush";
+                    this.value = "";
                 }
+                AppComponent.prototype.testFunc = function () {
+                    return "1 === 1 ";
+                };
+                AppComponent.prototype.onKeyup = function (value) {
+                    this.value += value + '|';
+                };
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n\n\n<section class=\"parent\">\n  <h2>This is the parent component</h2>\n    <p>Please enter your name</p>\n    <input type=\"text\" [(ngModel)]=\"name\">\n    <p>{{name}}</p>\n\n       <p>Please enter your age</p>\n    <input type=\"text\" [(ngModel)]=\"age\">\n    <p>{{age}}</p>\n\n<section class=\"child\">\n<my-property-binding [myName]=\"name\" [myAge]=\"age\" ></my-property-binding>\n\n</section>\n\n</section>\n\n\n\n\n\n    ",
-                        directives: [property_binding_component_1.PropertyBindingComponent]
+                        template: "\n\n       hello!\n          {{testFunc()}}\n       {{\"Please!\"}}\n        {{name}}\n\n        <br> Event binding <br>\n        <input type=\"text\" [value]=\"name\" [ngClass]=\" {red: true}\" (keyup)=\"onKeyup(inputElement.value)\" #inputElement>\n        <p>{{value}}</p>\n        <br>\n             <br> sample binding <br>\n        <input type=\"text\"   #inputElementS>\n        <p>(inputElementS.value)</p>\n                <br>\n\n        Two way binding\n        <br>\n                <input type=\"text\"  [(ngModel)]=\"name\">\n        <p>Your name: {{name}}</p>\n\n\n\n    ",
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

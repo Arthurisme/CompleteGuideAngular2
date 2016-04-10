@@ -1,47 +1,41 @@
 import {Component} from 'angular2/core';
+import {PropertyBindingComponent} from "./property-binding.component";
 
 
 @Component({
     selector: 'my-app',
     template: `
 
-       hello!
-          {{testFunc()}}
-       {{"Please!"}}
-        {{name}}
 
-        <br> Event binding <br>
-        <input type="text" [value]="name" [ngClass]=" {red: true}" (keyup)="onKeyup(inputElement.value)" #inputElement>
-        <p>{{value}}</p>
-        <br>
-             <br> sample binding <br>
-        <input type="text"   #inputElementS>
-        <p>(inputElementS.value)</p>
-                <br>
+<section class="parent">
+  <h2>This is the parent component</h2>
+    <p>Please enter your name</p>
+    <input type="text" [(ngModel)]="name">
+    <p>{{name}}</p>
 
-        Two way binding
-        <br>
-                <input type="text"  [(ngModel)]="name">
-        <p>Your name: {{name}}</p>
+       <p>Please enter your age</p>
+    <input type="text" [(ngModel)]="age">
+    <p>{{age}}</p>
+
+<section class="child">
+<my-property-binding [myName]="name" [myAge]="age" ></my-property-binding>
+
+</section>
+
+</section>
+
+
 
 
 
     `,
+    directives:[PropertyBindingComponent]
 
 })
 
 
 export class AppComponent {
 
-    name = "Bush";
-    value = "";
-
-    testFunc() {
-        return "1 === 1 ";
-    }
-
-    onKeyup(value:string) {
-        this.value += value + '|';
-    }
+    name = "";
 
 }
