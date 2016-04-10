@@ -22,11 +22,12 @@ System.register(['angular2/core', "./property-binding.component"], function(expo
             AppComponent = (function () {
                 function AppComponent() {
                     this.name = "";
+                    this.hobbies = "";
                 }
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n\n\n<section class=\"parent\">\n  <h2>This is the parent component</h2>\n    <p>Please enter your name</p>\n    <input type=\"text\" [(ngModel)]=\"name\">\n    <p>{{name}}</p>\n\n       <p>Please enter your age</p>\n    <input type=\"text\" [(ngModel)]=\"age\">\n    <p>{{age}}</p>\n\n<section class=\"child\">\n<my-property-binding [myName]=\"name\" [myAge]=\"age\" ></my-property-binding>\n\n</section>\n\n</section>\n\n\n\n\n\n    ",
+                        template: "\n\n\n<section class=\"parent\">\n  <h2>This is the parent component</h2>\n    <p>Please enter your name</p>\n    <input type=\"text\" [(ngModel)]=\"name\">\n    <p>{{name}}</p>\n\n       <p>Please enter your age</p>\n    <input type=\"text\" [(ngModel)]=\"age\">\n    <p>{{age}}</p>\n\n<section class=\"child\">\n<my-property-binding [myName]=\"name\" [myAge]=\"26\" (HobbiesChanged)=\"hobbies = $event\" ></my-property-binding>\n\n    <p>(in partent page:) {{hobbies}}</p>\n\n\n</section>\n\n</section>\n\n\n\n\n\n    ",
                         directives: [property_binding_component_1.PropertyBindingComponent]
                     }), 
                     __metadata('design:paramtypes', [])
