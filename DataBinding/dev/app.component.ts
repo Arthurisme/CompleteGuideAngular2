@@ -13,6 +13,15 @@ import {PropertyBindingComponent} from "./property-binding.component";
     <input type="text" [(ngModel)]="name">
     <p>{{name}}</p>
 
+  <h2>Test two way binding</h2>
+
+    <input type="text" [(ngModel)]="testtwoway">
+  <input type="text" [(ngModel)]="testtwoway">
+
+    <p>{{testtwoway}}</p>
+    <p>{{testtwoway}}</p>
+    <p>{{testtwoway}}</p>
+
        <p>Please enter your age</p>
     <input type="text" [(ngModel)]="age">
     <p>{{age}}</p>
