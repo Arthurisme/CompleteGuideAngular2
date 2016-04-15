@@ -36,7 +36,7 @@ System.register(['angular2/core', "angular2/core"], function(exports_1) {
                 PropertyBindingComponent = __decorate([
                     core_1.Component({
                         selector: 'my-property-binding',
-                        template: "\n<h2>This is the child component</h2>\n<p>Hey {{name}}! I am {{age}} </p>\n<br>\n<h2>What is your hobbies?</h2>\n<input type=\"text\" (keyup)=\"onHobbiesChanged(hobbies.value)\" #hobbies>\n\n\n\n    ",
+                        template: "\n<h2>This is the child component</h2>\n<p>Hey {{name}}! I am {{age}} </p>\n<br>\n<h2>What is your hobbies?</h2>\n<!--<input type=\"text\" (keyup)=\"onHobbiesChanged(hobbies.value)\" #hobbies>-->\n<input type=\"text\"#hobbies>\n<button  (click)=\"onHobbiesChanged(hobbies.value)\" >test hobbies changed</button>\n\n\n\n    ",
                         inputs: ['name: myName'],
                         outputs: ['HobbiesChanged'],
                     }), 

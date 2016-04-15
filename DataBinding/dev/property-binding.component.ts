@@ -10,7 +10,9 @@ import {EventEmitter} from "angular2/core";
 <p>Hey {{name}}! I am {{age}} </p>
 <br>
 <h2>What is your hobbies?</h2>
-<input type="text" (keyup)="onHobbiesChanged(hobbies.value)" #hobbies>
+<!--<input type="text" (keyup)="onHobbiesChanged(hobbies.value)" #hobbies>-->
+<input type="text"#hobbies>
+<button  (click)="onHobbiesChanged(hobbies.value)" >test hobbies changed</button>
 
 
 
