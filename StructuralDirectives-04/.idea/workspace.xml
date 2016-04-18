@@ -78,15 +78,25 @@
       <file leaf-file-name="structural-directives.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dev/structural-directives.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54545456">
-              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.8484849">
+              <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
               <folding>
-                <marker date="1460940437000" expanded="true" signature="147:494" placeholder="..." />
-                <marker date="1460940437000" expanded="true" signature="193:324" placeholder="..." />
-                <marker date="1460940437000" expanded="true" signature="371:475" placeholder="..." />
-                <marker date="1460940437000" expanded="true" signature="531:737" placeholder="..." />
-                <marker date="1460940437000" expanded="true" signature="577:718" placeholder="..." />
-                <marker date="1460940437000" expanded="true" signature="597:699" placeholder="..." />
+                <marker date="1460944032000" expanded="true" signature="201:548" placeholder="..." />
+                <marker date="1460944032000" expanded="true" signature="247:378" placeholder="..." />
+                <marker date="1460944032000" expanded="true" signature="425:529" placeholder="..." />
+                <marker date="1460944032000" expanded="true" signature="585:791" placeholder="..." />
+                <marker date="1460944032000" expanded="true" signature="631:772" placeholder="..." />
+                <marker date="1460944032000" expanded="true" signature="651:753" placeholder="..." />
+                <marker date="1460944032000" expanded="true" signature="828:1585" placeholder="..." />
+                <marker date="1460944032000" expanded="true" signature="878:1566" placeholder="..." />
+                <marker date="1460944032000" expanded="true" signature="978:1547" placeholder="..." />
+                <marker date="1460944032000" expanded="true" signature="1043:1052" placeholder="..." />
+                <marker date="1460944032000" expanded="true" signature="1141:1151" placeholder="..." />
+                <marker date="1460944032000" expanded="true" signature="1242:1253" placeholder="..." />
+                <marker date="1460944032000" expanded="true" signature="1346:1358" placeholder="..." />
+                <marker date="1460944032000" expanded="true" signature="1444:1455" placeholder="..." />
+                <marker date="1460944032000" expanded="true" signature="1622:1877" placeholder="..." />
+                <marker date="1460944032000" expanded="true" signature="1680:1858" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -97,6 +107,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="unless.directives.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/unless.directives.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -123,6 +143,7 @@
         <option value="$PROJECT_DIR$/dev/highlight.directives.ts" />
         <option value="$PROJECT_DIR$/dev/app.component.ts" />
         <option value="$PROJECT_DIR$/assets/scss/app.scss" />
+        <option value="$PROJECT_DIR$/dev/unless.directives.ts" />
         <option value="$PROJECT_DIR$/dev/structural-directives.component.ts" />
       </list>
     </option>
@@ -141,8 +162,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="8" />
-    <option name="y" value="142" />
+    <option name="x" value="2032" />
+    <option name="y" value="206" />
     <option name="width" value="1880" />
     <option name="height" value="997" />
   </component>
@@ -187,6 +208,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="StructuralDirectives-04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CustomAttributeDirective-04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StructuralDirectives-04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -280,7 +315,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="142" width="1880" height="997" extended-state="0" />
+    <frame x="2032" y="206" width="1880" height="997" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -439,6 +474,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dev/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dev/highlight.directives.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -458,33 +509,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/app.component.ts">
+    <entry file="file://$PROJECT_DIR$/dev/unless.directives.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev/structural-directives.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54545456">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.8484849">
+          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
           <folding>
-            <marker date="1460940437000" expanded="true" signature="147:494" placeholder="..." />
-            <marker date="1460940437000" expanded="true" signature="193:324" placeholder="..." />
-            <marker date="1460940437000" expanded="true" signature="371:475" placeholder="..." />
-            <marker date="1460940437000" expanded="true" signature="531:737" placeholder="..." />
-            <marker date="1460940437000" expanded="true" signature="577:718" placeholder="..." />
-            <marker date="1460940437000" expanded="true" signature="597:699" placeholder="..." />
+            <marker date="1460944032000" expanded="true" signature="201:548" placeholder="..." />
+            <marker date="1460944032000" expanded="true" signature="247:378" placeholder="..." />
+            <marker date="1460944032000" expanded="true" signature="425:529" placeholder="..." />
+            <marker date="1460944032000" expanded="true" signature="585:791" placeholder="..." />
+            <marker date="1460944032000" expanded="true" signature="631:772" placeholder="..." />
+            <marker date="1460944032000" expanded="true" signature="651:753" placeholder="..." />
+            <marker date="1460944032000" expanded="true" signature="828:1585" placeholder="..." />
+            <marker date="1460944032000" expanded="true" signature="878:1566" placeholder="..." />
+            <marker date="1460944032000" expanded="true" signature="978:1547" placeholder="..." />
+            <marker date="1460944032000" expanded="true" signature="1043:1052" placeholder="..." />
+            <marker date="1460944032000" expanded="true" signature="1141:1151" placeholder="..." />
+            <marker date="1460944032000" expanded="true" signature="1242:1253" placeholder="..." />
+            <marker date="1460944032000" expanded="true" signature="1346:1358" placeholder="..." />
+            <marker date="1460944032000" expanded="true" signature="1444:1455" placeholder="..." />
+            <marker date="1460944032000" expanded="true" signature="1622:1877" placeholder="..." />
+            <marker date="1460944032000" expanded="true" signature="1680:1858" placeholder="..." />
           </folding>
         </state>
       </provider>
