@@ -1,9 +1,9 @@
 import {Component} from 'angular2/core';
-import {EventEmitter} from "angular2/core";
 import {ListItem} from "../list-item";
+import {ShoppingListService} from "./shopping-list.service";
 
 @Component({
-    selector: 'shopping-list-item',
+    selector: 'shopping-list-new-item',
     template: `
 
 
@@ -17,17 +17,20 @@ import {ListItem} from "../list-item";
             <input type="text" id="item-amt"  [(ngModel)]="item.amount">
         </div>
 
-       <button (click)="onClick()">Remove Item</button>
+       <button (click)="onClick()">Add Item</button>
     `,
-    outputs:['itemRemoved'],
-    inputs:['item']
+
+
 })
-export class ShoppingListItemComponent {
+export class ShoppingListNewItemComponent {
     item =  {name: '', amount: 0};
-    itemRemoved = new EventEmitter<ListItem>();
+
+
+    constructor (private _shoppingListService: ShoppingListService ){}
+
 
     onClick(){
-        this.itemRemoved.emit(this.item);
+         this._shoppingListService.insertItem({name:this.item.name,amount:this.item.amount})
     }
 
 }

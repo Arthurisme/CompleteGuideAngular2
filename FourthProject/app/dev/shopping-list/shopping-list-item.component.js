@@ -1,4 +1,4 @@
-System.register(['angular2/core', "angular2/core"], function(exports_1) {
+System.register(['angular2/core', "angular2/core", "./shopping-list.service"], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,7 +8,7 @@ System.register(['angular2/core', "angular2/core"], function(exports_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, core_2;
+    var core_1, core_2, shopping_list_service_1;
     var ShoppingListItemComponent;
     return {
         setters:[
@@ -17,24 +17,29 @@ System.register(['angular2/core', "angular2/core"], function(exports_1) {
             },
             function (core_2_1) {
                 core_2 = core_2_1;
+            },
+            function (shopping_list_service_1_1) {
+                shopping_list_service_1 = shopping_list_service_1_1;
             }],
         execute: function() {
             ShoppingListItemComponent = (function () {
-                function ShoppingListItemComponent() {
+                function ShoppingListItemComponent(_shoppingListService) {
+                    this._shoppingListService = _shoppingListService;
                     this.item = { name: '', amount: 0 };
-                    this.itemRemoved = new core_2.EventEmitter();
+                    this.removed = new core_2.EventEmitter();
                 }
                 ShoppingListItemComponent.prototype.onClick = function () {
-                    this.itemRemoved.emit(this.item);
+                    this._shoppingListService.deleteItem({ name: this.item.name, amount: this.item.amount });
+                    this.removed.emit(null);
                 };
                 ShoppingListItemComponent = __decorate([
                     core_1.Component({
                         selector: 'shopping-list-item',
                         template: "\n\n\n        <div class=\"input\">\n            <label for=\"item-name\">Name</label>\n            <input type=\"text\" id=\"item-name\"  [(ngModel)]=\"item.name\">\n        </div>\n\n        <div class=\"input\">\n            <label for=\"item-amt\">Amount</label>\n            <input type=\"text\" id=\"item-amt\"  [(ngModel)]=\"item.amount\">\n        </div>\n\n       <button (click)=\"onClick()\">Remove Item</button>\n    ",
-                        outputs: ['itemRemoved'],
+                        outputs: ['removed'],
                         inputs: ['item']
                     }), 
-                    __metadata('design:paramtypes', [])
+                    __metadata('design:paramtypes', [shopping_list_service_1.ShoppingListService])
                 ], ShoppingListItemComponent);
                 return ShoppingListItemComponent;
             })();
