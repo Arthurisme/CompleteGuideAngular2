@@ -1,6 +1,4 @@
-System.register(["angular2/core"], function(exports_1, context_1) {
-    "use strict";
-    var __moduleName = context_1 && context_1.id;
+System.register(["angular2/core"], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -32,10 +30,9 @@ System.register(["angular2/core"], function(exports_1, context_1) {
                     __metadata('design:paramtypes', [])
                 ], CalculatorService);
                 return CalculatorService;
-            }());
+            })();
             exports_1("CalculatorService", CalculatorService);
         }
     }
 });
-
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNlcnZpY2VzL2NhbGN1bGF0b3Iuc2VydmljZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztZQUlBO2dCQUFBO2dCQVVBLENBQUM7Z0JBUkcsK0JBQUcsR0FBSCxVQUFJLElBQVcsRUFBRSxJQUFXO29CQUN6QixNQUFNLENBQUMsSUFBSSxHQUFDLElBQUksQ0FBQztnQkFDcEIsQ0FBQztnQkFHRCxvQ0FBUSxHQUFSLFVBQVMsSUFBVyxFQUFFLElBQVc7b0JBQzdCLE1BQU0sQ0FBQyxJQUFJLEdBQUcsSUFBSSxDQUFDO2dCQUN2QixDQUFDO2dCQVZMO29CQUFDLGlCQUFVLEVBQUU7O3FDQUFBO2dCQVdiLHdCQUFDO1lBQUQsQ0FWQSxBQVVDLElBQUE7WUFWRCxpREFVQyxDQUFBIiwiZmlsZSI6InNlcnZpY2VzL2NhbGN1bGF0b3Iuc2VydmljZS5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7SW5qZWN0YWJsZX0gZnJvbSBcImFuZ3VsYXIyL2NvcmVcIjtcblxuXG5ASW5qZWN0YWJsZSgpXG5leHBvcnQgY2xhc3MgQ2FsY3VsYXRvclNlcnZpY2Uge1xuXG4gICAgYWRkKG51bTE6bnVtYmVyLCBudW0yOm51bWJlcil7XG4gICAgICAgcmV0dXJuIG51bTErbnVtMjtcbiAgICB9XG5cblxuICAgIG11bHRpcGx5KG51bTE6bnVtYmVyLCBudW0yOm51bWJlcil7XG4gICAgICAgIHJldHVybiBudW0xICogbnVtMjtcbiAgICB9XG59XG4iXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0=
+//# sourceMappingURL=calculator.service.js.map
